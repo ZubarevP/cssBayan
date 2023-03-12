@@ -111,6 +111,10 @@ input:checked + h2 + img {
   transform: rotate(45deg);
 }
 
+label:hover > div > img {
+  transform: rotate(45deg);
+}
+
 .meme {
   margin-bottom: .5rem;
 }
