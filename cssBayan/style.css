@@ -3,6 +3,28 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: .3s;
+  transition-delay: .1s;
+}
+
+.header {
+  padding: 5px 15px;
+}
+
+.table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+label {
+  width: 100%;
+  cursor: pointer;
+  border-top: 2px solid silver;
+  margin: 5px;
+}
+
+.head {
+  width: 100%;
 }
 
 input[type="radio"] {
@@ -11,4 +33,60 @@ input[type="radio"] {
 
 input:checked + h2 {
   color: red;
+}
+
+label,
+img {
+  transition: .3s;
+  transition-delay: .1s;
+}
+
+label > img {
+  height: 0; 
+}
+
+label:has(input:checked) > img {
+ height: 200px; 
+}
+
+label:hover:has(input:not(:checked)) > img {
+  height: 200px;
+}
+
+.table > label > div > img {
+  width: 0;
+}
+
+.table:hover > label > div > img {
+  width: 25px;
+}
+
+input:checked + h2 + img {
+  transform: rotate(45deg);
+}
+
+
+.flex,
+.flex-column,
+.flex-center,
+.flex-space-between {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column,
+.flex-column-center {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-column-center {
+  justify-content: center;
+}
+
+.flex-space-between {
+  justify-content: space-between; 
 }
