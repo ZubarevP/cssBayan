@@ -146,16 +146,23 @@ input:checked + h2 {
 }
 
 .table > label > div > img {
-  opacity: 0;
-  width: 0;
+  opacity: 1;
+  width: 1.5rem;
 }
 
-@media screen and (max-width: 820px) {
+@media(hover: hover) {
+  .table > label > div > img {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+/*@media screen and (max-width: 820px) {
   .table > label > div > img {
     opacity: 1;
     width: 1.5rem;
   }
-}
+}*/
 
 @media (hover: hover) {
   .table:hover > label > div > img {
