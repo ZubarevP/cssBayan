@@ -8,8 +8,15 @@
   user-select: none;
 }
 
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  color: #3c3737;
+}
+
 h1 {
   font-size: 2.1rem;
+  color: white;
 }
 
 h2 {
@@ -63,6 +70,7 @@ h2 {
 
 .header {
   padding: .3rem 1rem;
+  background-color: #201414;
 }
 
 .table {
@@ -80,7 +88,7 @@ h2 {
 label {
   width: 100%;
   cursor: pointer;
-  border-top: .2rem solid silver;
+  border-top: .1rem solid silver;
 }
 
 .head {
@@ -130,11 +138,11 @@ label:has(input:checked) > img {
 }
 
 h2 {
-  color: blue;
+  color: #525287;
 }
 
 input:checked + h2 {
-  color: black;
+  color: #3c3737;
 }
 
 .table > label > div > img {
